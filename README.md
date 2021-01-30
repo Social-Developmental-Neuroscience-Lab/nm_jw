@@ -6,7 +6,7 @@ Scripts for neuromelanin preprocessing and analyses: dicom conversions, realignm
 - removal_script.sh, removes all files from subject data directories (subject data directories not viewable on github)
 - add_T1w_script.sh, adds T1w files to subject data directories from other location
 - convert_dicoms.sh, converts dicoms to niftis using [dcm2niix](https://github.com/rordenlab/dcm2niix)
--- turns files in dicoms folder into an array and calls file to be converted by index; allows user to discriminate between first and second dicom image dir for any given subject
+  - turns files in dicoms folder into an array and calls file to be converted by index; allows user to discriminate between first and second dicom image dir for any given subject
 
 ### scripts directory
 - [convert dicoms to niftis script]
