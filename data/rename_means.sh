@@ -8,6 +8,6 @@ output_dir="/data/projects/STUDIES/nm_jw/data/s"
 
 for sub in $Subs
 do
-        cp ${output_dir}${sub}/s${sub}_nonnormed_NM.nii ${output_dir}${sub}/s${sub}_SDC_NM.nii
+        cp ${output_dir}${sub}/means${sub}_nonnormed_NM.nii ${output_dir}${sub}/s${sub}_SDC_NM.nii
         
 done
