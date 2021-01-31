@@ -26,6 +26,7 @@ then
 	do
 		cd /data/projects/STUDIES/nm_jw/data/s${sub}
 		find . ! -name "s${sub}_SDC_T1w.ni" -type f -exec rm -f {} +
+		rm -r prepreprocessing_files
 		cd ../
 	done
 	echo Files deleted
