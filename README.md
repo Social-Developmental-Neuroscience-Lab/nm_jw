@@ -13,5 +13,5 @@ Scripts for neuromelanin preprocessing and analyses: dicom conversions, realignm
 ### scripts directory
 - realign_nonnormed.m, runs realignment step in spm12 for the nonnormed .nii files of all 36 subjects (will eventually be replaced with the more flexible realign.m script)
 - preprocess_nm_jw.m, includes full preprocessing steps
-- SN_Voxelwise_Analysis.m
-- nm_jw_SN_Voxelwise_Analysis_permutations.m
+- SN_Voxelwise_Analysis.m, performs voxelwise robust linear regression analysis within the SN mask and creates maps of effects within the SN
+- SN_Voxelwise_Analysis_permutations.m, gives a p-value for the cluster of voxels observed in the SN_voxelwise_analysis.m script
