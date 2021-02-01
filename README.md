@@ -33,8 +33,6 @@ Organization: Main project directory should contain three subdirectories: /data,
 - back in the terminal, cd back to the data directory and run the `rename_means.sh` script
   - visual check: visualize `means9999_nonnormed_NM.nii` and `s9999_SDC_NM.nii` to confirm that they are identical
 - run `move_prepreprocessing_files.sh` to clean up subject data directories
-
-![nonnormed image] (/data/projects/STUDIES/nm_jw/sample_images/mean_nonnormed_NM.png)
   
 ### preprocessing
 Launch matlab again and open `preprocess_nm_jw.m`. confirm that user inputs (i.e., `Subs, templatedir, TPMdir, and root_folder`) are entered correctly
