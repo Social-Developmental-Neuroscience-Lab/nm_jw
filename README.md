@@ -7,11 +7,11 @@ Scripts for neuromelanin preprocessing and analyses: dicom conversions, realignm
 - `add_T1w_script.sh`, adds T1w files to subject data directories from other location
 - `convert_dicoms.sh`, converts dicoms to niftis using [dcm2niix](https://github.com/rordenlab/dcm2niix)
   - turns files in dicoms folder into an array and calls file to be converted by index; allows user to discriminate between first and second dicom image dir for any given subject
-- `rename_means.sh`, (after running scripts/realign_nonnormed.m) renames mean NM files in format for use in preprocessing script
+- `rename_means.sh`, (after running `scripts/realign_nonnormed.m`) renames mean NM files in format for use in preprocessing script
 - `move_prepreprocessing_files.sh`, stores output from realignment step in a subdirectory
 
 ### scripts directory
-- `realign_nonnormed.m`, runs realignment step in spm12 for the nonnormed .nii files of all 36 subjects (will eventually be replaced with the more flexible realign.m script)
+- `realign_nonnormed.m`, runs realignment step in spm12 for the nonnormed .nii files of all 36 subjects (will eventually be replaced with the more flexible `realign.m` script)
 - `preprocess_nm_jw.m`, includes full preprocessing steps
 - `SN_Voxelwise_Analysis_nm_jw.m`, performs voxelwise robust linear regression analysis within the SN mask and creates maps of effects within the SN
 - `SN_Voxelwise_Analysis_permutations_nm_jw.m`, gives a p-value for the cluster of voxels observed in the `SN_voxelwise_analysis.m` script
@@ -35,7 +35,7 @@ Organization: Main project directory should contain three subdirectories: /data,
 - run `move_prepreprocessing_files.sh` to clean up subject data directories
   
 ### preprocessing
-Launch matlab again and open `preprocess_nm_jw.m`. confirm that user inputs (i.e., Subs, templatedir, TPMdir, and root_folder) are entered correctly
+Launch matlab again and open `preprocess_nm_jw.m`. confirm that user inputs (i.e., `Subs, templatedir, TPMdir, and root_folder`) are entered correctly
 - change `coreg=0` to `coreg=1` (line 17) and run the script (takes roughly 5 minutes)
   - output: `rs9999_SDC_NM.nii`
   - visual check: in fsleyes or mricron, overlay `rs9999_SDC_NM.nii` on the T1 image `s9999_SDC_T1w.nii` and confirm their alignment
