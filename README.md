@@ -14,10 +14,10 @@ Scripts for neuromelanin preprocessing and analyses: dicom conversions, realignm
 - `realign_nonnormed.m`, runs realignment step in spm12 for the nonnormed .nii files of all 36 subjects (will eventually be replaced with the more flexible realign.m script)
 - `preprocess_nm_jw.m`, includes full preprocessing steps
 - `SN_Voxelwise_Analysis_nm_jw.m`, performs voxelwise robust linear regression analysis within the SN mask and creates maps of effects within the SN
-- `SN_Voxelwise_Analysis_permutations_nm_jw.m`, gives a p-value for the cluster of voxels observed in the SN_voxelwise_analysis.m script
+- `SN_Voxelwise_Analysis_permutations_nm_jw.m`, gives a p-value for the cluster of voxels observed in the `SN_voxelwise_analysis.m` script
 
 ## running the scripts
-Organization: Main project directory should contain three subdirectories: /data, /scripts, and /templates. /data and /scripts should contain all of the scripts seen above. /data should also contain a subdirectory for each subject (e.g., "s9999"). /templates should contain seven templates (i.e., Template_0.nii - Template_6.nii)
+Organization: Main project directory should contain three subdirectories: /data, /scripts, and /templates. /data and /scripts should contain all of the scripts seen above. /data should also contain a subdirectory for each subject (e.g., "s9999"). /templates should contain seven templates (i.e., `Template_0.nii` - `Template_6.nii`)
 
 ### pre-preprocessing
 
